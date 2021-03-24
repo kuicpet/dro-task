@@ -2,6 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import './App.css';
 
 // Components
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -11,6 +12,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <div className="App">
+      <Header />
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/signup" component={Register}/>
